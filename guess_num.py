@@ -1,5 +1,10 @@
 import random
-r = random.randint(1, 100)
+start = input('請決定隨機數字範圍開始值: ')
+end = input('請決定隨機數字範圍結束值: ')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0 #必須寫在 while 外面, 才不會每次進 while 都被歸零
 while True:
     num = input('請輸入數字: ')
@@ -13,4 +18,4 @@ while True:
         print('比答案小喔')
     elif num < r:
         print('比答案大喔')
-    print('這是你猜的第', count, '次')
+    print('這是你猜的第', count, '次') #如果往前推會在 while 跑完才印出來
