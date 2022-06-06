@@ -15,7 +15,7 @@ while True:
         print('這是你猜的第', count, '次') #如此才會在猜對時也顯示出猜第幾次
         break
     elif num > r:
-        print('比答案小喔')
-    elif num < r:
         print('比答案大喔')
+    elif num < r:
+        print('比答案小喔')
     print('這是你猜的第', count, '次') #如果往前推會在 while 跑完才印出來
